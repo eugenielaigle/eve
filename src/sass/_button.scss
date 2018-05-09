@@ -1,0 +1,18 @@
+@mixin button($text, $bg) {
+  background: $bg;
+  border-radius: 10px;
+  color: $text;
+  padding: 5px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 0px 5px 10px 0px black;
+  cursor: pointer;
+  border: none;
+  &:hover {
+    background:darken($bg,8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background:darken($bg,25%);
+  }
+}
